@@ -46,13 +46,27 @@ function solution(arr,n) {
 }
   
 
+function solution2(arr,n){
+    let ans=[];
+    for(let i=0;i<n;i++){
+        let counter=0;
+        for(let j=0;j<n;j++){
+            if(arr[j]==arr[i]){
+                counter++;
+            }
+        }
+        ans.push(counter);
+    }
+    return ans.join(" ");
+}
 function main() {
     var t = 1;
     // t = parseInt(readLine());
     while (t--) {
         var n = parseInt(readLine());
         var arr = readLine().split(" ").map(Number);
-        var res = solution(arr,n);
+        // var res = solution(arr,n);
+        var res=solution2(arr,n);
         console.log(res);
     }
 }
