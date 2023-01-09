@@ -13,6 +13,7 @@ process.stdin.resume();
 process.stdin.setEncoding('ascii');
 
 var input_stdin = "";
+
 var input_stdin_array = "";
 var input_currentline = 0;
 

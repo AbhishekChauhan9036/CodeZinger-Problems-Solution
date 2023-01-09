@@ -18,7 +18,7 @@ process.stdin.on('data', function (data) {
 });
 
 process.stdin.on('end', function () {
-    input_stdin_array = input_stdin.split("\n");
+   input_stdin_array = input_stdin.split("\n");
     main();
 });
 
